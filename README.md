@@ -12,7 +12,8 @@ by *name of authors*
 | ------------- |--------------|
 | **Input**|  [human/hg38 genome sequence](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)  |  
 | |  [annotation of referance genome on GTF format](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.knownGene.gtf.gz) |
-| | cDNAfragmentSequence.fastq and CellBarcodeUMIsequence.fastq for each sample [cDNAfragment example](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR125/054/SRR12570154/SRR12570154_2.fastq.gz)[CellBarcodeUMI example](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR125/054/SRR12570154/SRR12570154_1.fastq.gz)|
+| | cDNAfragmentSequence.fastq and CellBarcodeUMIsequence.fastq for each sample [cDNAfragment example ](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR125/054/SRR12570154/SRR12570154_2.fastq.gz)and [ CellBarcodeUMI example](http://ftp.sra.ebi.ac.uk/vol1/fastq/SRR125/054/SRR12570154/SRR12570154_1.fastq.gz)|
+| |
 |**Output**|  |  
-| **Dependencies**| STAR 2.7.10a,|
+| **Dependencies**| STAR 2.7.10a,scTE(needs python >=3.6),|
 |**Summary**|.|
