@@ -7,7 +7,7 @@ by *name of authors*
 
 ## Description of scripts used in the pipeline
 # Part I: Align reads to referance genome
-|**bash Script**|[aligning.sh](https://github.com/am) |
+|**bash Script**|[alinerscripts.sh](https://github.com/am) |
 | ------------- |--------------|
 | **Input**|  [human/hg38 genome sequence](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)  |  
 | |  [annotation of referance genome on GTF format](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.knownGene.gtf.gz) |
@@ -17,3 +17,13 @@ by *name of authors*
 |**Output**| count matrixes on h5ad format |  
 | **Dependencies**| STAR 2.7.10a,scTE(needs python >=3.6),bedtools|
 |**Summary**| Genome indexes were generated and Patients' paired-end FASTQ files were mapped to them.transposable element were quantified using scTE package algorithm. |
+
+
+
+# # Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
+|**R Script**|[Seuratscripts.R](https://github.com/am) |
+| ------------- |--------------|
+| **Input**|  count matrixes on h5ad format[ count matrix test](input....)  |  
+|**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
+| **Dependencies**| zellkonverter,SingleCellExperiment,Seurat|
+|**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.To  |
