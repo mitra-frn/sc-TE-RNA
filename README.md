@@ -18,12 +18,26 @@ by *name of authors*
 | **Dependencies**| STAR 2.7.10a,scTE(needs python >=3.6),bedtools|
 |**Summary**| Genome indexes were generated and Patients' paired-end FASTQ files were mapped to them.transposable element were quantified using scTE package algorithm. |
 
+<br/>
+<br/>
+<br/>
 
-
-# # Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
+# Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
 |**R Script**|[Seuratscripts.R](https://github.com/am) |
 | ------------- |--------------|
 | **Input**|  count matrixes on h5ad format[ count matrix test](input....)  |  
 |**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
 | **Dependencies**| zellkonverter,SingleCellExperiment,Seurat|
-|**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.To  |
+|**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.After scaling data, PCA was performed and The KNN graph was conducted based on the PCA-reduced data, and unsupervised clustering was performed.Differential expression analysis was conducted based on the 'MAST' method.|
+
+<br/>
+<br/>
+<br/>
+# Part III: Scoring pathways and corrlation test
+|**R Script**|[Seuratscripts.R](https://github.com/am) |
+| ------------- |--------------|
+| **Input**|  count matrixes on h5ad format[ count matrix test](input....)  |  
+|**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
+| **Dependencies**| zellkonverter,SingleCellExperiment,Seurat|
+|**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.After scaling data, PCA was performed and The KNN graph was conducted based on the PCA-reduced data, and unsupervised clustering was performed.Differential expression analysis was conducted based on the 'MAST' method.|
+
