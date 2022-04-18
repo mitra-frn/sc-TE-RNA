@@ -35,12 +35,12 @@ by *name of authors*
 <br/>
 <br/>
 
-# Part III: Scoring pathways and corrlation test
+# Part III: Scoring pathways and correlation test
 |**R Script**|[scoringscripts.R](https://github.com/am) |
 | ------------- |--------------|
 | **Input**|  seurat-object of samples|
 | | gene-sets of pathways[example](genset) |  
-|**Output**|  corrlation tables and relating p.adjvalue|  
+|**Output**|  correlation tables and relating p.adjvalue|  
 | **Dependencies**| Seurat,psych|
 |**Summary**| Average expression levels of  gene-sets pathways in neutrophil clusters and upregulated genes in these clusters(logfc>0.7 and p.adj<0.05)  were calculated and the correlation between these pathways and upregulated genes in neutrophil clusters was evaluated.|
 
