@@ -26,7 +26,7 @@ by *name of authors*
 # Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
 |**R Script**|[Seuratscripts.R](https://github.com/am) |
 | ------------- |--------------|
-| **Input**|  count matrixes on h5ad format[ count matrix test](input....)  |  
+| **Input**|  count matrixes on h5ad format[ examples of count matrix](input....)  |  
 |**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
 | **Dependencies**| zellkonverter,SingleCellExperiment,Seurat|
 |**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.After scaling data, PCA was performed and The KNN graph was conducted based on the PCA-reduced data, and unsupervised clustering was performed.Differential expression analysis was conducted based on the 'MAST' method.|
@@ -38,8 +38,8 @@ by *name of authors*
 # Part III: Scoring pathways and correlation test
 |**R Script**|[scoringscripts.R](https://github.com/am) |
 | ------------- |--------------|
-| **Input**|  seurat-object of samples|
-| | gene-sets of pathways[example](genset) |  
+| **Input**|  seurat-object of samples[ example of seurat metadata](|
+| | gene-sets of pathways[ example](genset) |  
 |**Output**|  correlation tables and relating p.adjvalue|  
 | **Dependencies**| Seurat,psych|
 |**Summary**| Average expression levels of  gene-sets pathways in neutrophil clusters and upregulated genes in these clusters(logfc>0.7 and p.adj<0.05)  were calculated and the correlation between these pathways and upregulated genes in neutrophil clusters was evaluated.|
