@@ -39,7 +39,7 @@ by *name of authors*
 |**R Script**|[scoringscripts.R](scripts/scoringscripts.R) |
 | ------------- |--------------|
 | **Input**|  seurat-object of samples[ example of seurat metadata]|
-| | gene-sets of pathways[ example](genset) |  
+| | gene-sets of pathways[ example](https://github.com/mitra-frn/sc-TE-RNA/blob/main/Inputs/gene-pathway(tableS2).xlsx) |  
 |**Output**|  correlation tables and relating p.adjvalue|  
 | **Dependencies**| Seurat,psych|
 |**Summary**| Average expression levels of  gene-sets pathways in neutrophil clusters and upregulated genes in these clusters(logfc>0.7 and p.adj<0.05)  were calculated and the correlation between these pathways and upregulated genes in neutrophil clusters was evaluated.|
