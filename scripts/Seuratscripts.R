@@ -1,7 +1,7 @@
 #load libraries
 
 
-library(seurat)
+library(Seurat)
 library(SingleCellExperiment)
 library(zellkonverter)
 library(MAST)
