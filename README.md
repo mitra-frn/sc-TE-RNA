@@ -38,7 +38,7 @@ by *name of authors*
 # Part III: Scoring pathways and correlation test
 |**R Script**|[scoringscripts.R](scripts/scoringscripts.R) |
 | ------------- |--------------|
-| **Input**|  seurat-object of samples[ example of seurat metadata]|
+| **Input**|  seurat-object of samples[ example of seurat metadata](https://github.com/mitra-frn/sc-TE-RNA/blob/main/Inputs/scoring%20table%20example.csv)|
 | | gene-sets of pathways[ example](https://github.com/mitra-frn/sc-TE-RNA/blob/main/Inputs/gene-pathway(tableS2).xlsx) |  
 |**Output**|  correlation tables and relating p.adjvalue|  
 | **Dependencies**| Seurat,psych|
