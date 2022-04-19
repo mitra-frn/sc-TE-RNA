@@ -8,7 +8,7 @@ by *name of authors*
 
 ## Description of scripts used in the pipeline
 # Part I: Align reads to referance genome
-|**bash Script**|[alinerscripts.sh](https://github.com/am) |
+|**bash Script**|[alinerscripts.sh](scripts/alinerscripts.sh) |
 | ------------- |--------------|
 | **Input**|  [human/hg38 genome sequence](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz)  |  
 | |  [annotation of referance genome on GTF format](https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/genes/hg38.knownGene.gtf.gz) |
