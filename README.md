@@ -24,7 +24,7 @@ by *name of authors*
 <br/>
 
 # Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
-|**R Script**|[Seuratscripts.R](https://github.com/am) |
+|**R Script**|[Seuratscripts.R](scripts/Seuratscripts.R) |
 | ------------- |--------------|
 | **Input**|  count matrixes on h5ad format[ examples of count matrix](input....)  |  
 |**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
