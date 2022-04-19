@@ -36,9 +36,9 @@ by *name of authors*
 <br/>
 
 # Part III: Scoring pathways and correlation test
-|**R Script**|[scoringscripts.R](https://github.com/am) |
+|**R Script**|[scoringscripts.R](scripts/scoringscripts.R) |
 | ------------- |--------------|
-| **Input**|  seurat-object of samples[ example of seurat metadata](|
+| **Input**|  seurat-object of samples[ example of seurat metadata]|
 | | gene-sets of pathways[ example](genset) |  
 |**Output**|  correlation tables and relating p.adjvalue|  
 | **Dependencies**| Seurat,psych|
