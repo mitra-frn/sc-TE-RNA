@@ -26,7 +26,7 @@ by *name of authors*
 # Part II: Preprocessing, analysis, and exploration of  scRNA-seq data
 |**R Script**|[Seuratscripts.R](scripts/Seuratscripts.R) |
 | ------------- |--------------|
-| **Input**|  count matrixes on h5ad format[ examples of count matrix](input....)  |  
+| **Input**|  count matrixes on h5ad format[ examples of count matrix](https://github.com/mitra-frn/sc-TE-RNA/blob/main/Inputs/count_matrix_example.zip)  |  
 |**Output**|  Defferential expression tables for each cluster in compares to other clusters|  
 | **Dependencies**| zellkonverter,SingleCellExperiment,Seurat|
 |**Summary**| count matrixes were preprocessed(ig.,filtering,normalizaton).The bach effects between samples were removed and all-samples of each condition(ie,healthy,mild and severe conditions) were integrated.After scaling data, PCA was performed and The KNN graph was conducted based on the PCA-reduced data, and unsupervised clustering was performed.Differential expression analysis was conducted based on the 'MAST' method.|
