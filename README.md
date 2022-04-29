@@ -1,8 +1,24 @@
 # sc-TE-RNA
-*name of article*
+*Single-cell RNA seq analysis revealed that upregulation of transposable elements is related to neutrophil defects in severe COVID-19*
 
 by *name of authors*
-
+## Description of supplementary table used in the pipeline
+|**SupplTables**|Description|
+| ------------- |--------------|
+|Table S1|	gene markers used for clustering |
+|Table S2|	pathways and their involved genes |
+|Table S3|	correlation between the selected pathways and the overexpressed genes in its related cluster (INTRON MODE)|
+|Table S4|	correlation between the selected pathways and the overexpressed genes in   cluster 6(TEs are separated from other genes) (INTRON MODE)|
+|Table S5|	correlation between the selected pathways and the overexpressed genes in   cluster 6(All genes with LogFC>0.7) (INTRON MODE)|
+|Table S6|	correlation between the selected pathways and the overexpressed genes in   cluster 11(All genes with LogFC>0.7) (INTRON MODE)|
+|Table S7|	correlation between the selected pathways and the overexpressed genes in   cluster 4(All genes with LogFC>0.7) (INTRON MODE)|
+|Table S8|	Differential expression analysis between all clusters in healthy population(INTRON MODE)|
+|Table S19|	Differential expression analysis between all clusters in alive population(INTRON MODE)|
+|Table S10|	Differential expression analysis between all clusters in dead population(INTRON MODE)|
+|Table S11|	Differential expression analysis between all clusters in healthy population(NOINTRON MODE)|
+|Table S12|	Differential expression analysis between all clusters in alive population(NOINTRON MODE)|
+|Table S13|	Differential expression analysis between all clusters in dead population(NOINTRON MODE)|
+|Table S14|	correlation between the selected pathways and the overexpressed genes in its related cluster (NOINTRON MODE)|
 
 
 
