@@ -1,7 +1,7 @@
 # sc-TE-RNA
 *Single-cell RNA seq analysis revealed that upregulation of transposable elements is related to neutrophil defects in severe COVID-19*
 
-by *name of authors*
+
 ## Description of supplementary table used in the pipeline
 |**SupplTables**|Description|
 | ------------- |--------------|
