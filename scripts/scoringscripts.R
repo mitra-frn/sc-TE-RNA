@@ -3,13 +3,13 @@
 library(Seurat)
 library(psych)
 ----------------------------------------------------
-#calculate average expression levels of intended sets of genes and upregulated genes in one neutrophil cluster
-#input:list of pathways and list of thier GENS(gene-sets of intended pathways),neutrophil_cluster and its upregulated genes
-#output:ex_table(table of average expression levels of intended pathways and cluster's upregulated-genes in each cell)
+#calculate average expression levels of intended sets of genes and upregulated genes in  myeloid cell type cluster
+#input:list of pathways and list of thier GENS(gene-sets of intended pathways),upregulated genes of  myeloid cell type cluster
+#output:ex_table(table of average expression levels of intended pathways and cluster's upregulated-genes in myeloid cell type)
 
 
-neutrophil_cluster<-AddModuleScore(neutrophil_cluster,features = 'list of gene-set + upregulated genes in each cluster', name = 'vectors of pathway names+upregulated-gene')
-ex_table<-neutrophil_cluster@meta.data[,c('vectors of pathway-columns and upregulated-genes')]
+ myeloid-cluster<-AddModuleScore(myeloid_cluster,features = 'list of gene-set + upregulated genes in  myeloid cell type cluster', name = 'vectors of pathway names+upregulated-gene')
+ex_table<-each_cluster@meta.data[,c('vectors of pathway-columns and upregulated-genes')]
 
 ----------------------------------------------------
 #correlation between these pathways and upregulated genes
