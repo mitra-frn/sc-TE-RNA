@@ -102,7 +102,7 @@ integrated[['cluster']]<-clusters
 DefaultAssay(integrated)<-'RNA'
 Idents(integrated)<-'cluster'
 integrated<-NormalizeData(integrated)
-fe<-c("PI3","CSF3R","FCGR3B","NAMPT","G0S2","SOD2","SLC25A37","PELI1","MXD1","TNFAIP6","AQP9","FPR1","CLEC2B","PROK2","ADM","SMCHD1","CREBEF","ALPL","MMP9","CHI3L1","S100A8","S100A9","S100A12","IL1RN","PHACTR1","BCL2A1","ITGAX","CDC42EP3","IL1B","IFIT3","IFITM2","IL1R2","BASP1","CXCL8","CD68","ALDH2","APOC1","MRC1","CTSB","CTSL","C1QA","C1QB","C1QC","LYZ","MARCO","FCN1","VCAN","CD3D","CD3G","CD3E","GZMA","CD2","NKG7","GNLY","CD22","CD79A","TPSAB1","CPA3","TPSB2","CAPS","TPPP3","DNAAF1","DNAH12","SCGB1A","SLPI","WFDC2","SERPINB3","S100A2","KRT15","KRT17","BPIFB1","ASCL3","TMEM61","CLCNKB")
+fe<-c("cell-markers")
 DotPlot(integrated,features=fe)+RotatedAxis()
 -------------------------------------------------------------
 #Differential expression between all clusters
@@ -114,11 +114,5 @@ DefaultAssay(integrated)<-'RNA'
 Idents(integrated)<-'integrated_snn_res.0.8'
 integrated<-NormalizeData(integrated)
 all.markers <- FindAllMarkers(object =CH.integrated,test.use='MAST'))
--------------------------------------------------------------
-#separate neutrophil clusters from other cluster
-#input:integrated(clustered data with retro elements)
-#output:neutrophil_clusters
 
-
-neutrophil_clusters=subset(integrated,subset='integrated_snn_res.0.8' %in% 'numbers of neutrophil clusters')
 
